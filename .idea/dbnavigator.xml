@@ -176,6 +176,8 @@
           <content-type name="PHP" enabled="true" />
           <content-type name="JSP" enabled="true" />
           <content-type name="JSPx" enabled="true" />
+          <content-type name="Groovy" enabled="true" />
+          <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Bash" enabled="true" />
           <content-type name="Manifest" enabled="true" />
@@ -356,10 +358,11 @@
         <fetch-block-size value="100" />
         <execution-timeout value="20" />
         <debug-execution-timeout value="600" />
-        <focus-result value="false" />
+        <prompt-execution value="false" />
       </statement-execution>
       <script-execution>
         <command-line-interfaces />
+        <execution-timeout value="300" />
       </script-execution>
       <method-execution>
         <execution-timeout value="30" />
@@ -389,6 +392,10 @@
         <compile-dependencies value="ASK" />
         <always-show-controls value="false" />
       </compiler>
+      <debugger>
+        <debugger-type value="JDWP" />
+        <use-generic-runners value="true" />
+      </debugger>
     </operation-settings>
     <ddl-file-settings>
       <extensions>
